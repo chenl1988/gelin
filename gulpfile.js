@@ -22,8 +22,16 @@ gulp.task('clean', function(cb) {
     return del(['dist/*'], cb);
 })
 
+gulp.task('lib', function() {
+    gulp.src(['src/lib/jquery-3.2.1.min.js', 'src/lib/bootstrap.min.js']) //需要操作的源文件
+        .pipe(concat('common.min.js'))
+        //.pipe(uglify())               //压缩js文件
+        //.pipe(concat('app.js'))       //把js文件合并成app.js文件
+        .pipe(gulp.dest('dist/js')) //把操作好的文件放到dist/js目录下
+        .pipe(browsersync.reload({ stream: true }));
+});
 gulp.task('js', function() {
-    gulp.src('src/js/**') //需要操作的源文件
+    gulp.src('src/js/*.js') //需要操作的源文件
         //.pipe(uglify())               //压缩js文件
         //.pipe(concat('app.js'))       //把js文件合并成app.js文件
         .pipe(gulp.dest('dist/js')) //把操作好的文件放到dist/js目录下
@@ -48,7 +56,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('css', function() {
-    gulp.src(['src/css/reset.css', 'src/css/bootstrap.min.css'])
+    gulp.src(['src/css/bootstrap.min.css', 'src/css/reset.css'])
         .pipe(concat('common.min.css'))
         .pipe(minifyCss()) //- 压缩处理成一行
         .pipe(cssnano()) //css压缩
@@ -88,7 +96,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('serve', ['clean'], function() {
-    gulp.start('js', 'less', 'css', 'html', 'img', 'fonts');
+    gulp.start('js', 'lib', 'less', 'css', 'html', 'img', 'fonts');
     browsersync.init({
         port: 3000,
         server: {

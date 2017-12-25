@@ -6,6 +6,9 @@
   }
 }
 .container {
+  padding-bottom: 100px;
+}
+body {
   background-color: #f2f2f2;
 }
 .public-header {
@@ -46,8 +49,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .public-nav .nav-wrap .logo {
   width: 99px;
@@ -56,7 +60,10 @@
 }
 .public-nav .nav-wrap .nav-item-wrap {
   width: calc(100% - 97px - 70px);
-  margin-left: 0px;
+  margin-left: 70px;
+  margin-bottom: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .public-nav .nav-wrap .nav-item {
   float: left;
@@ -72,15 +79,64 @@
   line-height: 16px;
   margin-top: 13px;
   color: #000;
-  border-right: 1px solid #ccc;
   text-decoration: none;
+  border-right: 1px solid #ccc;
 }
 .public-nav .nav-wrap .nav-item.active {
   background-color: #f2f2f2;
 }
-.public-nav .nav-wrap .nav-item.active a {
-  border: 0;
-}
 .public-nav .nav-wrap .nav-item:last-child a {
   border: 0;
+}
+.breadcrumb-nav {
+  height: 25px;
+  line-height: 25px;
+  margin-top: 54px;
+}
+.breadcrumb-nav .breadcrumb-link {
+  font-size: 14px;
+  color: #afafaf;
+}
+.breadcrumb-nav .breadcrumb-link.active {
+  color: #000;
+}
+.public-footer .footer-header {
+  height: 148px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.public-footer .canada-icon {
+  width: 49px;
+  height: 28px;
+}
+.public-footer .canada-info {
+  font-size: 16px;
+  margin-left: 20px;
+}
+.public-footer .address-icon {
+  margin-left: 24px;
+  width: 68px;
+  height: 75px;
+}
+.public-footer .address-wrap {
+  margin-left: 24px;
+}
+.public-footer .address-wrap .address-info {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.public-footer .address-wrap .address-info:last-child {
+  margin-bottom: 0;
+}
+.public-footer .footer-bottom {
+  height: 48px;
+  background-color: #333;
 }
