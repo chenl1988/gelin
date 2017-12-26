@@ -85,6 +85,9 @@ body {
 .public-nav .nav-wrap .nav-item.active {
   background-color: #f2f2f2;
 }
+.public-nav .nav-wrap .nav-item.active a {
+  border: 0;
+}
 .public-nav .nav-wrap .nav-item:last-child a {
   border: 0;
 }
