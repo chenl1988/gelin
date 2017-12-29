@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  background-color: #f2f2f2;
+}
 @media (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -7,11 +10,12 @@
 }
 .container {
   padding-bottom: 100px;
-}
-body {
-  background-color: #f2f2f2;
+  padding-top: 192px;
 }
 .public-header {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
   height: 46px;
   line-height: 46px;
   background-color: #333;
@@ -36,6 +40,10 @@ body {
   padding-right: 0;
 }
 .public-nav {
+  position: fixed;
+  z-index: 9;
+  top: 46px;
+  width: 100%;
   height: 146px;
   background-color: #fff;
 }
@@ -142,4 +150,30 @@ body {
 .public-footer .footer-bottom {
   height: 48px;
   background-color: #333;
+}
+.modal.qrcode-modal .modal-dialog {
+  width: 435px;
+  top: 10%;
+}
+.modal.qrcode-modal .modal-header {
+  border: 0;
+  padding: 8px;
+}
+.modal.qrcode-modal .modal-header .close {
+  font-size: 28px;
+}
+.modal.qrcode-modal .modal-content {
+  border-radius: 0;
+}
+.modal.qrcode-modal .qrcode-title {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+.modal.qrcode-modal .qrcode-img {
+  width: 240px;
+  height: 240px;
+  margin: 40px auto 60px;
+  display: block;
 }

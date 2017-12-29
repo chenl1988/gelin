@@ -32,6 +32,15 @@
   margin: 22px auto 0;
   width: 152px;
   height: 152px;
+  position: relative;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.product-list .product-item .product-img:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
 }
 .product-list .product-item .product-title {
   font-size: 16px;
