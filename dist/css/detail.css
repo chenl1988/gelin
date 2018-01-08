@@ -1,0 +1,111 @@
+@charset "UTF-8";
+body {
+  background-color: #fff;
+}
+.public-nav {
+  border-bottom: 8px solid #f2f2f2;
+}
+.public-footer .footer-header {
+  background-color: #f2f2f2;
+}
+.container {
+  width: 848px;
+  margin: 0 auto 0;
+  padding-bottom: 300px;
+}
+.detail-wrap {
+  padding-top: 78px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.detail-wrap .swiper-container {
+  width: 280px;
+  margin: 0;
+}
+.detail-wrap .gallery-top {
+  height: 364px;
+}
+.detail-wrap .gallery-top .swiper-slide img {
+  width: 100%;
+}
+.detail-wrap .gallery-thumbs {
+  height: 88px;
+  margin-top: 50px;
+}
+.detail-wrap .gallery-thumbs .swiper-slide {
+  text-align: center;
+}
+.detail-wrap .gallery-thumbs .swiper-slide img {
+  width: 92%;
+  border: 1px solid #d0d0d0;
+}
+.detail-wrap .swiper-wrap,
+.detail-wrap .detail-info {
+  float: left;
+}
+.detail-wrap .detail-info {
+  padding-left: 40px;
+  width: calc(100% - 280px);
+}
+.detail-wrap .detail-info .detail-title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.detail-wrap .detail-info .info-item {
+  padding-left: 18px;
+  margin-bottom: 12px;
+  white-space: normal;
+  word-break: break-all;
+  width: 100%;
+}
+.detail-wrap .detail-info .info-item:last-child {
+  margin-bottom: 0;
+}
+.detail-wrap .detail-info .info-item span {
+  display: inline-block;
+}
+.detail-wrap .detail-info .info-item .item-key {
+  font-size: 18px;
+  color: #888;
+  width: 10%;
+}
+.detail-wrap .detail-info .info-item .item-value {
+  width: 89%;
+  font-size: 18px;
+  color: #2c2c2c;
+}
+.detail-wrap .detail-info .info-item .item-price {
+  font-size: 24px;
+  color: #ff6978;
+}
+.detail-wrap .detail-info .detail-btn {
+  width: 100px;
+  height: 42px;
+  background-color: #ff6978;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+  margin: 90px 0 0 20px;
+}
+.detail-describe {
+  clear: both;
+  margin-top: 30px;
+}
+.detail-describe .describe-nav {
+  width: 100%;
+  font-size: 20px;
+  background-color: #f3f3f3;
+  color: #000;
+  padding-left: 30px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.detail-describe .describe-content {
+  font-size: 14px;
+  color: #343434;
+  padding-left: 16px;
+  text-indent: 30px;
+  line-height: 22px;
+}
